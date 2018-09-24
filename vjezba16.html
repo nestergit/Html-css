@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vjezba 16</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            div{
+                border-style: solid;
+                borde-width:2px;
+                border-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <form method="GET" action="zad_16.php">
+                <tr>
+                    <td><label for="korime">Korisnicko ime:</td>
+                    <td><input type="text" name="korime" id="korime"></td>
+                </tr>
+                <tr>
+                    <td><label for="jezik">Jezik:</td>
+                    <td>
+                        <select name="jezik" id="jezik">
+                            <option value="1" selected>Hrvatski</option>
+                            <option value="2">Engleski</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="unos">Unos teksta:</label>
+                      <td>  <textarea id="unos"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salji:</td>
+                    <td><input type="submit" name="salji" value="Salji"</td>
+                
+                </tr>
+                
+            </form>
+        </table>
+    </body>
+</html>

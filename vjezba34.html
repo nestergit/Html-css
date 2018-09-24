@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Zadatak 34-Pjesme</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            .tijelo{
+                background-color: green;
+                background-image: url('neka.jpg');
+                background-position: left;
+            }
+            .labela{
+                color: lightblue;
+            }
+            .prozor{
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body class="tijelo">
+        <form name="forma" method="POST" action="pjesme.php">
+            <label class="labela" for="sifra">Sifra pjesme:</label>
+            <input class="prozor" type="text" name="sifra" id="sifra"><br>
+            <label class="labela" for="naziv">Naziv pjesme:</label>
+            <input class="prozor" type="text" name="naziv" id="naziv"><br>
+            <label class="labela" for="autor">Autor:</label>
+            <select name="autor" id="autor">
+                <option value="prvi">Prvi autor</option>
+                <option value="drugi">Drugi autor</option>
+                <option value="treci">Treci autor</option>
+            </select><br>
+            <label class="labela" for="tekst">Tekst:</label><br>
+            <textarea rows="10" cols="40" id="tekst"></textarea><br>
+            <label class="labela" for="izvodac1">Izvodac 1</label>
+            <input type="radio" name="izvodac1" value="1" id="izvodac1"><br>
+            <label class="labela" for="izvodac2">Izvodac 2</label>
+            <input type="radio" name="izvodac2" value="2" id="izvodac2"><br>
+            <label class="labela" for="izvodac3">Izvodac 3</label>
+            <input type="radio" name="izvodac3" value="3" id="izvodac3"><br>
+            <input type="submit" name="salji" value="Posalji">
+
+        </form>
+        
+    </body>
+</html>

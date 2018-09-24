@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G1 10.09.2018</title>
+        <meta charset="UTF-8">
+       
+    </head>
+    <body>
+        <div id="navigacija">
+            <ol>
+                <li><a href="Grupa 1.html">G1</a></li>
+                <li><a href="Grupa 2.html">G2</a></li>
+                <li><a href="http://www.foi.hr">FOI</a></li>
+            </ol>
+        </div>
+        <div id="registracija">
+            <form name="registracija">
+                <label for="ime">Ime:</label>
+                <input type="text" name="ime" id="ime" maxlength="20"><br>
+                <label for="prezime">Prezime:</label>
+                <input type="text" name="prezime" id="prezime" maxlength="20"><br>
+                <label for="opcija">Odaberite zupaniju:</label>
+                <select name="zupanije" id="opcija">
+                    <option value="0">Odaberi zupaniju</option>
+                    <option value="1">Varazdinska</option>
+                    <option value="2">Zagrebacka</option>
+                    <option value="3">Medimurska</option>
+                </select><br>
+                <label for="unos">Podaci o tvrtki:</label><br>
+                <textarea rows="50" id="unos"> </textarea><br>
+                <input type="checkbox" value="UR">Upravljanje racunalima<br>
+                <input type="checkbox" value="IP">Informaticka podrska<br>
+                <input type="checkbox" value="RT">Racunalna tehnologija<br>
+                <input type="submit" name="posalji" value="Posalji">
+                <input type="reset" name="resetiraj" value="Resetiraj">
+            </form>
+        </div>
+    </body>
+</html>

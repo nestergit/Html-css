@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Zadatak 28</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stil.css">
+    </head>
+    <body>
+        <form name="forma1" method="POST" action="salji.php">
+            <label for="jmbag">JMBAG:</label>
+            <input type="text" name="jmbag" id="jmbag"><br>
+            <input type="submit" name="salji" value="Salji">
+        </form>
+        <form class="forma" name="forma2" method="POST" action="salji.php">
+            <p>Izaberite PITUP centar:</p>
+            <label for="zabok">Zabok:</label>
+            <input type="radio" name="centar" value="1" id="zabok"><br>
+            <label for="varazdin">Varazdin:</label>
+            <input type="radio" name="centar" value="2" id="varazdin"><br>
+            <label for="krizevci">Krizevci:</label>
+            <input type="radio" name="centar" value="3" id="krizevci"><br>
+            <label for="sisak">Sisak:</label>
+            <input type="radio" name="centar"value="4" id="sisak"><br>
+            <input type="submit" name="salji2" value="Salji">
+        </form>
+    </body>
+</html>
+
+stil.css
+
+form{
+background-color:yellow;
+}
+.forma{
+backgorund-color:lightblue;
+}

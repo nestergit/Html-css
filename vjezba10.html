@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vjezba 2.9.-Pero Peric</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            #gornji{
+                background-color: red;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            #donji{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="gornji">
+                    <h1>FOI</h1>
+                    <a href="http://www.foi.hr"><img src="foi.jpg" width="300px"
+                                                     height="200px"></a>
+                </td>
+            </tr>
+            <tr>
+                <td id="donji">
+                    <form name="obrazac">
+                        <label for="naziv">Naziv:</label>
+                        <input type="text" name="naziv" id="naziv"><br>
+                        <label for="opis">Opis:</label><br>
+                        <textarea id="opis" rows="40" cols="30"></textarea><br>
+                        <label for="mjerna">Mjerna jedinica:</label><br>
+                        <select name="mjerna" id="mjerna">
+                            <option value="m">Metar</option>
+                            <option value="kg">Kilogram</option>
+                            <option value="l" selected=>Litra</option>
+                        </select><br>
+                        <input type="submit" name="salji" value="Posalji">
+                        <input type="reset" value="Resetiraj">
+                        
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

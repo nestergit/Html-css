@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IWA-ispit</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stil.css">
+    </head>
+    <body>
+        <form name="obrazac" method="GET" action="dz2.php">
+            <label>Vrsta ispita</label><br>
+            <input type="radio" name="vrsta" value="u">Usmeni<br>
+            <input type="radio" name="vrsta" value="p">Pismeni<br>
+            <label>Korisnici</label><br>
+            <input type="checkbox" name="korisnici" value="p">Pero<br>
+            <input type="checkbox" name="korisnici" value="m">Mato<br>
+            <input type="checkbox" name="korisnici" value="v">Iva<br>
+            <input type="checkbox" name="korisnici" value="mr">Marko<br>
+            <input type="submit" name="posalji" value="Posalji" style="border: 5px solid blue">
+        </form>
+        <div class="blok">
+            <a href="http://www.foi.hr" target="_blank"><img src="foi.jpg" width="100px" height="100px"></a>
+        </div>
+    </body>
+</html>
+
+still.css
+.blok{
+margin:20px 10px;
+text-decoration:underline;
+font-weight:bold;
+}
+margin-top:20px; margin-right:10px; margin-bottom:20px; margin-left:10px;
+label{
+font-size:15px;
+}
+label:hover{
+font-size:20px;
+font-style:itlic;}

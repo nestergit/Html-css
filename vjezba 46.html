@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cvijece</title>
+        <meta charset="UTF-8">
+        <style type='text/css'>
+            .forma{
+                color: blue;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="forma" name="obrazac" method="GET" action="dz2.php">
+            <label for="naziv">Unos naziva:</label><br>
+            <input type="text" name="naziv" id="naziv" maxlength="20"><br>
+            <label for="odabir"> Odabir kategorija:</label><br>
+            <input type="checkbox" name="odabir" id="odabir" value="R">Ruza<br>
+            <input type="checkbox" name="odabir" id="odabir" value="T">Trajnica<br>
+            <input type="checkbox" name="odabir" id="odabir" value="J">Jednokratna<br>
+            <label for="opcija">Opcija:</label><br>
+            <input type="radio" name="opcija" id="opcija" value="1">Suncano<br>
+            <input type="radio" name="opcija" id="opcija" value="0">Sijena<br>
+            <label for="opis">Opis:</label><br>
+            <textarea size="10" rows="15" id="opis"> </textarea><br>
+            <label for="datum">Datum:</label><br>
+            <input type="text" name="datum" id="datum" placeholder="gggg.mm.dd"><br>
+            <input type="submit" name="salji" value="Salji">
+
+        </form>
+    </body>
+</html>

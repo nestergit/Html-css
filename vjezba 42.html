@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IWA</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Pero Peric">
+        <style type="text/css">
+            #navigacija{
+                border: 2px solid black;
+            }
+            .unos{
+                color: red;
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navigacija">
+            <a href="#sadrzaj">Idi na sadrzaj</a><br>
+            <a href="dz2.php?otvori=da">DZ2</a>
+        </div>
+        <div id="sadrzaj">
+            <h1>Prijava</h1>
+            <form name="obrazac" method="POST" action="dz2.php">
+                <label for="korime">Korisnicko ime:</label>
+                <input class="unos" type="text" name="korime" id="korime"
+                       maxlength="10"><br
+                       <label for="godina">Godina:</label>
+                <select name="godina" id="godina">
+                <option value="1">1.godina</option>
+                <option value="2">2.godina</option>
+                <option value="3">3.godina</option>
+                <option value="4">4.godina</option>
+                </select><br>
+                <label for="komentar">Komentar:</label><br>
+                <textarea rows="30" cols="50" id="komentar"> </textarea><br>
+                <input type="submit" name="salji" value="Salji">
+            </form>
+        </div>
+        
+    </body>
+</html>

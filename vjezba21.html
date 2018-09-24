@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Narudzba</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="dizajn.css"> 
+    </head>
+    <body>
+        <div id="naslov">
+            <ol>
+                <li><a href="dz1.html">dz1</a></li>
+                <li><a href="dz2.php">dz2</a></li>
+            </ol>
+            <form name="obrazac" method="POST" action="posalji.php">
+                <label for="cola">Cola:</label>
+                <input type="text" name="cola" id="cola" size="5"><br>
+                <label for="fanta">Fanta:</label>
+                <input type="text" name="fanta" id="fanata" size="5"><br>
+                <label for="sprite">Sprite:</label>
+                <input type="text" name="sprite" id="sprite" size="5"><br>
+                <label for="0">Dan:</label>
+                <input type="radio" name="rok" id="0" value="0">
+                <label for="1">Tjedan:</label>
+                <input type="radio" name="rok" id="1" value="1" checked>
+                <label for="2">Mjesec:</label>
+                <input type="radio" name="rok" id="2" value="2"><br>
+                <input type="submit" name="posalji" value="Posalji">
+            </form>
+        </div>
+        <div class="sadrzaj">
+            <p>Pavlinska 2,Fakultet organizacije i informatike</p>
+            <a href="www.foi.hr">FOI</a>
+        </div>
+        <div class="podnozje">
+            
+        </div>
+    </body>
+</html>
+
+dizajn.css
+a{
+color:red;
+text-decoration:none;
+}
+.sadrzaj {
+font-size:15px;
+color:blue;
+margin-top:5px;
+margin-bottom:5px;
+}

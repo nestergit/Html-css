@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Glasanje</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Pero Peric">
+    </head>
+    <style type="text/css">
+        h1{
+            font-size: 15px;
+        }
+        .obrazac{
+            background-color: blue;
+            color: green;
+        }
+    </style>
+    <body>
+        <div>
+            <form class="obrazac" name="forma" method="POST" action="iwa.php">
+                <label for="ime">Ime:</label>
+                <input type="text" name="ime" id="ime" size="10" maxlength="15"><br>
+                <label for="glasanje">Glasanje:</label>
+                <select name="glasanje" id="glasanje">
+                    <option value="PP">Pero Peric</option>
+                    <option value="KK">Krunoslav Krunic</option>
+                    <option value="RR">Rajko Rajic</option>
+                </select><br>
+                <label for="upamti">Upamti glasanje:</label>
+                <input type="checkbox" name="upamti" value="1" id="upamti"><br>
+                <input type="submit" name="salji" value="Salji">
+            </form>
+        </div>
+        <div>
+            <h1>Naslov prve razine</h1>
+            <ol>
+                <li>Pero Peric</li>
+                <li>Krunoslav Krunic</li>
+                <li>Rajko Rajic</li>
+            </ol>
+        </div>
+    </body>
+</html>

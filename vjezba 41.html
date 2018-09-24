@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Zadatak 41</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            div{
+                color: darkblue;
+                background-color: yellow;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+            .obrazac{
+                background-color: lightblue;
+                font-family: Calibri;
+                font-size: 22px;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="obrazac" name="forma" method="POST" action="slalji.php">
+            <label for="ime">Ime:</label>
+            <input type="text" name="ime" id="ime" size="10" maxlength="15"><br>
+            <label for="predmet">Predmet:</label>
+            <select name="predmet" id="predmet">
+                <option value="uiu">Upravljanje informatickim uslugama</option>
+                <option value="mat">Matematika</option>
+                <option value="iwa">Izgradnja Web aplikacija</option>
+                <option value="stat">Statistika</option>
+            </select><br>
+            <label>Ispis rasporeda</label><br>
+            <label for="da">Da</label>
+            <input type="radio" name="ispis" value="da" id="da">
+            <label for="ne">Ne</label>
+            <input type="radio" name="ispis" value="ne" id="ne"><br>
+            <input type="submit" name="salji" value="Salji">
+        </form>
+        <div>
+            <h1>Ovo je naslov prve razine</h1>
+            <ol>
+                <li>Pero Peric</li>
+                <li>Zagrebacka 111</li>
+                <li>10 000 Zagreb</li>
+            </ol>
+        </div>
+    </body>
+</html>

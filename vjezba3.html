@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ispit vjezba</title>
+        <meta name='author' content="Pero Peric">
+        <meta charset="UTF-8">
+        <style type="text/css">
+            label{
+                color:blue;
+                font-size: 10px;
+                width: 30%;
+            }
+            .polja{
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='naslov'>
+            <a href="http://www.foi.hr"><img src="foi.jpg" width="200px" height="100px"></a>
+        </div>
+        <div id='sadrzaj'>
+            <form name="forma" method='POST' action="ispis.php">
+                <label for='ime'>Ime:</label>
+                <input class="polja" type="text" name="ime" id="ime" maxlength="30"><br>
+                <select name="prezime" id="prezime">
+                    <option value="0">Peric</option>
+                    <option value="1">Ivic</option>
+                    <option value="2">Matic</option>
+                </select><br>
+                <label for="zivotopis">Zivotopis:</label><br>
+                <textarea rows="20" cols="100" id="zivotipis"></textarea><br>
+                <input type="submit" name="salji" value="Salji">
+            </form>
+        </div>
+
+        </body>
+</html>

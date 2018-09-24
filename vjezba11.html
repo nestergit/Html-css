@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pero Peric</title>
+        <meta charset="UTF-8">
+        <Link rel="stylesheet" type="text/css" href="dizajn.css">
+    </head>
+    <body>
+        <table>
+            <form name="forma" method="POST" action="prijava.php">
+                <tr>
+                    <td><label for="korime">Korisnicko ime</label></td>
+                    <td><input class="unos" type="text" name="korime" id="korime" maxlength="30" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Lozinka:</label></td>
+                    <td><input class="unos" type="password" name="pass" id="pass" maxlength="30" size="20"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="gumb" type="submit" name="posalji"
+                   value="Salji" </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
+
+dizajn.css
+label{
+background-color:grey;}
+.unos{bakground-color:purple;
+font-family:Arial;}
+#gumb{
+font-size:150%;
+font-size:24px;}

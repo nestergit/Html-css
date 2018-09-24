@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Statistika</title>
+        <meta charset="UTF-8">
+        <style type='text/css'>
+            .obrazac{
+                font-size: 10px;
+                background-color: blue;
+            }
+            label{
+                color: red;
+                font-family: Arial;
+            }
+            #naslov{
+            text-align:center;
+            font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='naslov'>
+            <img src ='logo.jpg' width="200px" height="400px"><br>
+            <p>Odabir operacije</p>
+        </div>
+        <div id ='sadrzaj'>
+            <form class="obrazac" name='forma' method="POST" action="dz2.php">
+                <label for="opcije"> Odabir opcije</label><br>
+                <select name="opcije" id="opcije">
+                    <option value="1">Aritmeticka sredina</option>
+                    <option value="2">Mod</option>
+                    <option value="3">Medijan</option>
+                </select><br>
+                <label for="korime">Korisnicko ime:</label>
+                <input type="text" name="korime"><br>
+                <label for="lozinka">Lozinka:</label>
+                <input type="password" name="lozinka" id="lozinka"><br>
+                <label for="a">A:</label>
+                <input type="number" name="a" id="a"><br>
+                <label for="b">B:</label>
+                <input type="number" name="b" id="b"><br>
+                <label for="c">C:</label>
+                <input type="number" name="c" id="c"><br>
+                <input type="submit" name="salji" value="Posalji">    
+            </form> 
+        </div>
+         <div id="podnozje">
+        <a href="mailti:statistika@foi.hr">Kontakt</a></div>
+    </body>
+</html>

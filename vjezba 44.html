@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vozacka</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            #naslov{
+                font-weight: bold;
+                font-style: italic;
+                text-align:center; 
+            }
+            body{
+                border-color: red;
+                border-style: solid;
+                border-width: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 id="naslov">Izdavanje vozacke</h3>
+        <form name="forma" method="POST" action="zadaci/dz2.php">
+            <label for="imeprezime">Ime i prezime:</label><br>
+            <input type="text" name="Imeiprezime" id="imeprezime" size="10"
+                   maxlength="15"><br>
+            <label for="datumrod">Datum rodenja:</label><br>
+            <input type="text" name="datumrod" id="datumrod" placeholder="dd.mm.yyyy."><br>
+            <label for="odabir kategorije">Odaberite:</label><br>
+            <input type="checkbox" name="kategorija" value="A" id="odabir_kategorije">A<br>
+            <input type="checkbox" name="kategorija" value="B" id="odabir kategorije" checked>B<br>
+            <input type="checkbox" name="kategorija" value="C" id="odabir kategorije">C<br>
+            <label for="uprava">Odabir policijske uprave</label><br>
+            <select name="uprava" id="uprava">
+                <option value="M">PU Medimurska</option>
+                <option value="V">PU Varazdinska</option>
+                <option value="Z">PU Zagrebacka</option>
+            </select><br>
+            <input type="submit" name="salji" value="Salji">
+        </form>
+    </body>
+</html>

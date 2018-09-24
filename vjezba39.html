@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Zadatak 39</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stil.css">
+    </head>
+    <body>
+        <form name="forma" method="POST">
+            <label for="ime">Ime:</label>
+            <input type="text" name="ime" id="ime"><br>
+            
+            <label for="prezime">Prezime:</label>
+            <input type="text" name="prezime" id="prezime"><br>
+            
+            <label for="tekst">Tekst:</label>
+            <textarea name="tekst" id="tekst"> </textarea><br>
+            
+            <label for="grad">Grad:</label>
+            <select name="grad" id="grad">
+                <option value="1">Zagreb</option>
+                <option value="2">Osijek</option>
+                <option value="3">Split</option>
+                <option value="4">Rijeka</option>
+            </select><br>
+            <input type="submit" name="salji" value="Posalji"><br>
+            <input type="reset" value="Resetiraj">
+        </form>
+        <table>
+            <caption>Ovo je naslov tablice</caption>
+            <tr>
+                <td>Ime</td>
+                <td>Prezime</td>
+            </tr>
+            <tr>
+                <td>Pero</td>
+                <td>Peric</td>
+            </tr>
+            <tr>
+                <td>Ivo</td>
+                <td>Ivic</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+stil.css
+caption{
+color:blue;
+}
+tr:hover{
+background-color:grey;
+}

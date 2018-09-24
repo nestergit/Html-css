@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Zadatak 26</title>
+        <meta charset="UTF-8">
+      
+    </head>
+    <body>
+        <form name="forma" method="POST" action="zad26.php">
+            <p>Molim upisite trazene podatke</p>
+            <label for="ime">Ime:</label>
+            <input type="text" name="ime" id="ime"><br>
+            <label for="prezime">Prezime:</label>
+            <input type="text" name="prezime" id="prezime"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <p>Izaberite jedan od ponudenih kolegija</p>
+            <label for="predmet">Predmet:</label>
+            <select name="predmet" id="predmet">
+                <option value="1">Mat</option>
+                <option value="2" selected>Iwa</option>
+                <option value="3">UIU</option>
+            </select><br>
+            <input type="submit" name="salji" value="Salji">
+        </form>
+    </body>
+</html>

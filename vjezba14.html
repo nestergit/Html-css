@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vjezba14</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stil.css">
+    </head>
+    <body class="tijelo">
+        <form method="GET" action="zad_14.php">
+            <ul clas="lista">
+                <li>
+                    <label for="korime">Korisnicko ime:</label>
+                    <input type="text" name="korime" id="korime">
+                </li>
+                <li>
+                    <label for="izbor">Izaberite predmet</label>
+                    <select name="izbor" id="izbor">
+                        <option value="1">Sigurnost IS-a</option>
+                        <option value="2">IWA</option>
+                        <option value="3">Matematika</option>
+                        <option value="4">UIU</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Ispis prijamnice</label>
+                    <label for="da">Da:</label>
+                    <input type="radio" name="ispis" value="da" id="da">
+                    <label for="ne">Ne:</label>
+                    <input type="radio" name="ispis" value="ne" id="ne">
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
+
+stil.css
+
+.tijelo{
+color:green;
+}
+.lista{
+color:blue;
+font-size:10px;
+}

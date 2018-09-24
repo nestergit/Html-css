@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Zadatak 35</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            label{
+                color: red;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .polja{
+                background-color: blue;
+                width: 30%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form name="forma" method="POST">
+            <label for="kruska">Kruska:</label>
+            <input class="polja" type="text" name="kruska" id="kruska"><br>
+            <label for="jabuka">Jabuka:</label>
+            <input class="polja" type="text" name="jabuka" id="jabuka"><br>
+            <label for="marelica">Marelica:</label>
+            <input class="polja" type="text" name="marelica" id="marelica"><br>
+            <label>Nacin placanja:</label><br>
+            <label for="cekovi">Cekovi</label>
+            <input type="radio" name="nacin_placanja" value="cekovi" id="cekovi">
+            <label for="kartice">Kartice</label>
+            <input type="radio" name="nacin_placanja" value="kartice" id="kartice"><br>
+            
+            <input type="reset" value="Osvjezi">
+            <input type="submit" name="salji" value="Salji">
+            
+        </form>
+    </body>
+</html>

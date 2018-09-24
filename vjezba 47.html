@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nabava voca</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            label{
+                font-size: 1em;
+                color: red;
+            }
+            .polja{
+                background-color: blue;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="forma" method="GET" action="zadatak_2.php">
+            <label for="kol_krusaka">Kolicina krusaka:</label>
+            <input class="polja" type="text" name="kol_krusaka" id="kol_krusaka"><br>
+            <label for="kol_jabuka">Kolicina jabuka:</label>
+            <input class="polja" type="text" name="kol_jabuka" id="kol_jabuka"><br>
+            <label for="kol_marelica">Kolicina marelica:</label>
+            <input class="polja" type="text" name="kol_marelica" id="kol_marelica"><br>
+            <label for="nacin placanja">Nacin placanja:</label><br>
+            <input type="radio" name="nacin_placanja" id="nacin_placanja" value="gotovina">
+            Gotovina<br>
+            <input type="radio" name="nacin_placanja" id="nacin_placanja" value="kartica">
+            Kartica<br>
+            <input type="radio" name="nacin_placanja" id="nacin_placanja" value="cek">
+            Cek<br>
+            <label for="napomena">Napomena:</label><br>
+            <textarea rows="10" cols="50" id="napomena"> </textarea><br>
+            <input type="submit" name="posalji" value="Posalji"><br>
+            <input type="reset" value="Osvjezi obrazac"
+        </form>
+    </body>
+</html>
